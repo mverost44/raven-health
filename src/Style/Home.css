@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: calc(100vw);
+  height: calc(100vh - 93px);
+  background-color: #DDDDDD;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.home-welcome {
+  font-family: omnes-condensed, sans-serif;
+  font-size: 40px;
+  color: #696969;
+}
+
+.home-avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
