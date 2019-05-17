@@ -3,12 +3,12 @@
   "name": "Raven Health",
   "icons": [
     {
-      "src": "/src/Images/raven-health-icon.png",
+      "src": "/src/Images/192-raven-icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/src/Images/raven-health-icon.png",
+      "src": "/src/Images/512-raven-icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
