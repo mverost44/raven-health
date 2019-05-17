@@ -14,7 +14,13 @@ export default class BottomNav extends Component {
 
           <i className="fa-inverse fas fa-heartbeat fa-lg"></i>
           <i className="fa-inverse fas fa-plus fa-lg"></i>
-          <i className="fa-inverse fas fa-users fa-lg"></i>
+
+          <Link
+            to="/news"
+          >
+            <i className="fa-inverse fas fa-users fa-lg"></i>
+          </Link>
+
           <i className="fa-inverse fas fa-bell fa-lg"></i>
         </nav>
       </>

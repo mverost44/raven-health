@@ -14,28 +14,35 @@ export default class Home extends Component {
   }
 
   data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    title: "Nicotine Intake",
+    labels: ["January", "February", "March", "April", "May"],
     datasets: [{
-      label: "JUUL Usage",
-      backgroundColor: 'rgba(115, 194, 251, .6)',
-      borderColor: 'rgb(255, 99, 132)',
+      backgroundColor: 'rgba(0, 0, 0, 0)',
+      borderColor: '#007AFF',
       data: [25, 20, 24, 19, 19, 16, 15],
     }]
+  }
+
+  options = {
+    legend: {
+      display: false
+    },
+    maintainAspectRatio: true
   }
 
   render() {
     return (
       <>
         <div className="home-container">
-          <h1 className="home-greeting">Hello Elena!</h1>
+          <h1 className="home-greeting">Hello Max!</h1>
           <img className="home-avatar" src={avatar} alt="avatar"/>
-          <h3 className="home-welcome">Welcome Back!</h3>
+          <h4 className="home-chart-title">Nicotine Intake YTD</h4>
           <Line
             className="home-chart"
             data={this.data}
-            options={{ maintainAspectRatio: true }}
+            options={this.options}
           />
-          <button className="home-button">Get Involved</button>
+          <button className="home-cta-button">Get Involved</button>
         </div>
       </>
     )

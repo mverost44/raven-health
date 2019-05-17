@@ -3,7 +3,9 @@ import { Route } from 'react-router';
 
 import TopNav from './Layout/TopNav';
 import BottomNav from './Layout/BottomNav';
+
 import Home from './Layout/Home';
+import News from './Layout/News';
 
 import './App.css';
 
@@ -37,6 +39,13 @@ class App extends Component {
           exact path="/"
           render={() => (
             <Home />
+          )}
+        />
+
+        <Route
+          exact path="/news"
+          render={() => (
+            <News />
           )}
         />
       </>
