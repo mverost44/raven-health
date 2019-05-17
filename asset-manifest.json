@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/raven-health/static/css/main.050d5c61.chunk.css",
+    "main.js": "/raven-health/static/js/main.ba48b87f.chunk.js",
+    "main.js.map": "/raven-health/static/js/main.ba48b87f.chunk.js.map",
+    "runtime~main.js": "/raven-health/static/js/runtime~main.185573a3.js",
+    "runtime~main.js.map": "/raven-health/static/js/runtime~main.185573a3.js.map",
+    "static/js/2.03977e4d.chunk.js": "/raven-health/static/js/2.03977e4d.chunk.js",
+    "static/js/2.03977e4d.chunk.js.map": "/raven-health/static/js/2.03977e4d.chunk.js.map",
+    "index.html": "/raven-health/index.html",
+    "precache-manifest.149a46bb8258c1998bd44c666b6782b2.js": "/raven-health/precache-manifest.149a46bb8258c1998bd44c666b6782b2.js",
+    "service-worker.js": "/raven-health/service-worker.js",
+    "static/css/main.050d5c61.chunk.css.map": "/raven-health/static/css/main.050d5c61.chunk.css.map",
+    "static/media/avatar1.JPG": "/raven-health/static/media/avatar1.4fa4c8e1.JPG"
+  }
+}
