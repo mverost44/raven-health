@@ -5,7 +5,7 @@
   align-items: center;
   width: 100vw;
   height: calc(100vh - 93px);
-  background-color: #DDDDDD;
+  background-color: #C5D5E5;
   margin-top: 47px;
 }
 
@@ -52,8 +52,8 @@
   margin-top: 42px;
   padding: 8px 40px;
   border-radius: 25px;
-  background-color: #007AFF;
-  border: 2px solid #007AFF;
+  background-color: #003C7B;
+  border: 2px solid #003C7B;
   color: #FFFFFF;
   font-family: omnes-cond, sans-serif;
   font-style: normal;

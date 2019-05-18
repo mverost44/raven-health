@@ -4,7 +4,55 @@
   justify-content: flex-start;
   align-items: center;
   width: 100vw;
-  height: calc(100vh - 93px);
+  height: auto;
   background-color: #DDDDDD;
   margin-top: 47px;
+  overflow-x: hidden;
+}
+
+.post-container {
+  margin-top: 10px;
+  padding: 5px 10px;
+  width: 88%;
+  height: auto;
+  background-color: #FAFAFF;
+}
+
+.post-title {
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.post-body {
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+}
+
+.post-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height: 30px;
+  width: 88%;
+  padding: 3px 10px;
+  font-family: omnes-cond-thin, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.post-limiter {
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  height: 200px;
 }

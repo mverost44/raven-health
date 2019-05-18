@@ -5,7 +5,7 @@ import TopNav from './Layout/TopNav';
 import BottomNav from './Layout/BottomNav';
 
 import Home from './Layout/Home';
-import News from './Layout/News';
+import News from './Layout/NewsPage/News';
 
 import './App.css';
 

@@ -11,12 +11,12 @@ export default class TopNav extends Component {
     const pageTitle = (
       <p className="top-nav-title">{this.props.pageTitle}</p>
     )
+
     return (
       <>
         <nav className="top-nav">
           <i className="fa-inverse fas fa-bars fa-lg"></i>
           {this.props.pageTitle ? pageTitle : styledTitle}
-          <i className="fa-inverse fas fa-search fa-lg"></i>
         </nav>
       </>
     )

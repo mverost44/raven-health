@@ -4,24 +4,21 @@
   position: fixed;
   overflow: hidden;
   top: 0;
-  background-color: #FFFFFF;
+  background-color: #006FE3;
   height: 47px;
   width: 100vw;
   z-index: 100;
 }
 
+ /* leftmost menu icon in top-nav */
 .fa-bars {
   margin-left: 15px;
-  color: rgba(0, 122, 255, .8)
+  color: rgb(255, 255, 255)
 }
 
-.fa-search {
-  margin-right: 15px;
-  color: rgba(0, 122, 255, .8)
-}
-
+/* Page title centered in top-nav */
 .top-nav-title {
-  color: #007AFF;
+  color: #FFFFFF;
   font-size: 25px;
   font-family: omnes-pro, sans-serif;
   font-style: normal;
@@ -29,8 +26,9 @@
   margin: 0 auto;
 }
 
+/* Default top-nav title. 'Health' is styled  */
 .top-nav-span {
-  color: #007AFF;
+  color: #FFFFFF;
   font-size: 25px;
   font-family: omnes-cond-thin, sans-serif;
   font-style: normal;
@@ -43,7 +41,7 @@
   justify-content: space-around;
   position: fixed;
   overflow: hidden;
-  background-color: #FFFFFF;
+  background-color: #006FE3;
   bottom: 0;
   width: 100vw;
   height: 46px;
@@ -51,5 +49,5 @@
 }
 
 .bottom-nav .fas {
-  color: #007AFF;
+  color: #FFFFFF;
 }
