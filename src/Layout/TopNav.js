@@ -4,7 +4,7 @@ export default class TopNav extends Component {
   render() {
     const styledTitle = (
       <>
-        <p className="top-nav-title">Raven <span className="top-nav-span">Health</span></p>
+        <h1 className="top-nav-title">Raven <span className="top-nav-span">Health</span></h1>
       </>
     )
 

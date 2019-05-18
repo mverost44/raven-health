@@ -22,10 +22,10 @@ export default class Posts extends Component {
 
     return (
       <>
+        <div className="post-author">
+          {this.props.author}
+        </div>
         <div className={limited ? `${"post-container post-limiter"}` : `${"post-container"}`}>
-          <div className="post-author">
-            {this.props.author}
-          </div>
           <h1 className="post-title">
             {this.props.title}
           </h1>
