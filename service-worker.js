@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/raven-health/precache-manifest.c15b09de9512e6cf23700e894c6550e0.js"
+  "/raven-health/precache-manifest.787ace917ee80e3a8e97dcb0994d18e9.js"
 );
 
 self.addEventListener('message', (event) => {
