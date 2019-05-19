@@ -18,7 +18,7 @@
   height: auto;
   background-color: #FAFAFF;
   transition: max-height 1s ease-out;
-  max-height: 850px;
+  max-height: 1250px;
 }
 
 .post-author {

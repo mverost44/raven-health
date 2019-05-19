@@ -8,6 +8,7 @@
   height: 47px;
   width: 100vw;
   z-index: 50;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.35);
 }
 
  /* leftmost menu icon in top-nav */
@@ -27,7 +28,7 @@
   margin: 0 auto;
 }
 
-/* Default top-nav title. 'Health' is styled  */
+/* Default top-nav title. 'Health' is styled */
 .top-nav-span {
   color: #FFFFFF;
   font-size: 25px;
@@ -47,6 +48,7 @@
   width: 100vw;
   height: 46px;
   z-index: 50;
+  overflow: hidden;
 }
 
 .bottom-nav .fas {
@@ -117,7 +119,7 @@
   height: auto;
 }
 
-.fas {
+.sidenav .fas {
   margin-right: 25px;
 }
 

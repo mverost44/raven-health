@@ -1,0 +1,78 @@
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 93px);
+  background-color: #C5D5E5;
+  margin-top: 47px;
+  padding-top: 43px;
+  padding-bottom: 56px;
+  overflow-x: hidden;
+}
+
+.notifications-banner {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 100vw;
+  padding: 5px 15px;
+  background-color: #FAFAFA;
+  z-index: 40;
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.35);
+}
+
+.notification-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+  width: 95%;
+  height: auto;
+  background-color: #FAFAFF;
+  transition: max-height 1s ease-out;
+  max-height: 1250px;
+  margin-top: 2px;
+}
+
+.notification-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.notification-text {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.notification-title {
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+
+.notification-body {
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.loading-screen {
+  height: 100vh;
+  font-family: omnes-cond-thin, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}

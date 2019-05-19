@@ -9,6 +9,9 @@ import Home from './Layout/Home';
 import News from './Layout/NewsPage/News';
 import Research from './Layout/Research';
 import Charts from './Layout/ChartsPage/Charts';
+import Messages from './Layout/Messages';
+import Notifications from './Layout/Notifications';
+import Settings from './Layout/Settings';
 
 import avatar from './Images/avatar1.JPG'
 import './App.css';
@@ -78,6 +81,27 @@ class App extends Component {
           )}
         />
 
+        <Route
+          exact path="/messages"
+          render={() => (
+            <Messages />
+          )}
+        />
+
+        <Route
+          exact path="/notifications"
+          render={() => (
+            <Notifications />
+          )}
+        />
+
+        <Route
+          exact path="/settings"
+          render={() => (
+            <Settings />
+          )}
+        />
+
         <div id="sidenav" className="sidenav">
           <div className="sidenav-header">
             <img className="sidenav-avatar" src={avatar} alt="avatar"/>
@@ -88,18 +112,27 @@ class App extends Component {
             <span className="closebtn" onClick={() => this.closeNav()}>&times;</span>
           </div>
           <div className="sidenav-link-container">
-            <Link className="sidenav-link">
+            <Link
+              to="/messages"
+              className="sidenav-link"
+              onClick={() => this.closeNav()}>
               <i className="fa-inverse fas fa-envelope fa-lg"></i>
               Messages
             </Link>
 
-            <Link className="sidenav-link">
+            <Link
+              to="/notifications"
+              className="sidenav-link"
+              onClick={() => this.closeNav()}>
                 <i className="fas fa-bell fa-lg"></i>
                 Notifications
                 {notification}
             </Link>
 
-            <Link className="sidenav-link">
+            <Link
+              to="/settings"
+              className="sidenav-link"
+              onClick={() => this.closeNav()}>
             <i className="fa-inverse fas fa-cog fa-lg"></i>
               Settings
             </Link>
