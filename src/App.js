@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
+import { Link } from 'react-router-dom'
 
 import TopNav from './Layout/TopNav';
 import BottomNav from './Layout/BottomNav';
@@ -25,6 +26,12 @@ class App extends Component {
   }
 
   render() {
+    const notification = (
+      <i className="fas fa-circle fa-2x">
+        <span className="fa-layers-text">1</span>
+      </i>
+    )
+
     return (
       <>
         <Route
@@ -74,7 +81,28 @@ class App extends Component {
         <div id="sidenav" className="sidenav">
           <div className="sidenav-header">
             <img className="sidenav-avatar" src={avatar} alt="avatar"/>
+            <h3 className="sidenav-username">Max VeRost
+              <br />
+              <span className="sidenav-user-location">Boston, MA</span>
+            </h3>
             <span className="closebtn" onClick={() => this.closeNav()}>&times;</span>
+          </div>
+          <div className="sidenav-link-container">
+            <Link className="sidenav-link">
+              <i className="fa-inverse fas fa-envelope fa-lg"></i>
+              Messages
+            </Link>
+
+            <Link className="sidenav-link">
+                <i className="fas fa-bell fa-lg"></i>
+                Notifications
+                {notification}
+            </Link>
+
+            <Link className="sidenav-link">
+            <i className="fa-inverse fas fa-cog fa-lg"></i>
+              Settings
+            </Link>
           </div>
         </div>
       </>

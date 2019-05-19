@@ -16,7 +16,7 @@
   font-weight: 500;
   font-size: 30px;
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .home-avatar {
@@ -44,7 +44,8 @@
   font-family: omnes-cond, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
+  margin: 3px 10px;
   color: #FFFFFF;
 }
 

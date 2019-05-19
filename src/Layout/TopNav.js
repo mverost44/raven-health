@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class TopNav extends Component {
 
   openNav = () => {
-    document.getElementById("sidenav").style.width = "250px";
+    document.getElementById("sidenav").style.width = "300px";
   }
 
   render() {

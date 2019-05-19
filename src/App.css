@@ -60,32 +60,93 @@
   z-index: 100;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #177CE5;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 
 .sidenav-header {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
-  height: 65px;
+  height: 80px;
   background-color: #7CAFE4;
   margin-top: 0;
 }
 
 .sidenav-avatar {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin-left: 15px;
+}
+
+.sidenav-username {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 15px;
+  align-self: flex-end;
+}
+
+.sidenav-user-location {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .closebtn {
   font-size: 36px;
   color: #818181;
-  transition: 0.3s;
+  transition: 0.2s;
   margin-right: 10px;
   margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.sidenav-link-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.fas {
+  margin-right: 25px;
+}
+
+.fa-circle {
+  position: absolute;
+  color: #FFC14B;
+  margin-left: 20%;
+  margin-top: -6px;
+}
+
+.fa-layers-text {
+  position: absolute;
+  margin-left: -17px;
+  margin-top: 3px;
+  color: #FFFFFF;
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.sidenav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-left: 30px;
 }
