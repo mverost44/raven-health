@@ -3,19 +3,20 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: center;
   width: 100vw;
   height: calc(100vh - 93px);
-  background-color: #C5D5E5;
+  background-color: rgba(0, 111, 227, .23);
   margin-top: 47px;
 }
 
 .home-greeting {
-  font-family: omnes-cond, sans-serif;
+  font-family: omnes-semi-cond, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  color: #696969;
-  margin-top: 25px;
+  font-size: 30px;
+  color: #FFFFFF;
+  margin-top: 20px;
 }
 
 .home-avatar {
@@ -25,33 +26,28 @@
   border-radius: 50%;
 }
 
-/* .home-welcome {
+.home-feature-heading {
   font-family: omnes-cond, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  color: #696969;
+  font-size: 22px;
+  color: #FFFFFF;
+  margin-top: 25px;
   margin-bottom: 0px;
-} */
+}
 
-.home-chart-title {
+.home-feature-text {
   font-family: omnes-cond, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  margin-top: 35px;
-  margin-bottom: 0px;
-}
-
-.home-chart {
-  width: 80vw;
-  height: auto;
+  color: #FFFFFF;
 }
 
 .home-cta-button {
-  margin-top: 42px;
-  padding: 8px 40px;
-  border-radius: 25px;
+  margin-top: 20px;
+  padding: 12px 50px;
+  border-radius: 5px;
   background-color: #003C7B;
   border: 2px solid #003C7B;
   color: #FFFFFF;
@@ -59,4 +55,13 @@
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
+}
+
+.home-ps {
+  font-family: omnes-cond-thin, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  color: #003C7B;
+  margin-top: 5px;
 }

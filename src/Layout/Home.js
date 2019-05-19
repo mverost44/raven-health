@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import avatar from '../Images/avatar1.JPG'
-
-import { Line } from 'react-chartjs-2';
+import { Link } from 'react-router-dom'
 
 import '../Style/Home.css'
 
@@ -13,36 +12,16 @@ export default class Home extends Component {
     }
   }
 
-  data = {
-    title: "Nicotine Intake",
-    labels: ["January", "February", "March", "April", "May"],
-    datasets: [{
-      backgroundColor: 'rgba(0, 0, 0, 0)',
-      borderColor: '#007AFF',
-      data: [25, 20, 24, 19, 19, 16, 15],
-    }]
-  }
-
-  options = {
-    legend: {
-      display: false
-    },
-    maintainAspectRatio: true
-  }
-
   render() {
     return (
       <>
         <div className="home-container">
-          <h1 className="home-greeting">Hello Max!</h1>
+          <h1 className="home-greeting">Hello, Max!</h1>
           <img className="home-avatar" src={avatar} alt="avatar"/>
-          <h4 className="home-chart-title">Nicotine Intake YTD</h4>
-          <Line
-            className="home-chart"
-            data={this.data}
-            options={this.options}
-          />
-          <button className="home-cta-button">Get Involved</button>
+          <h3 className="home-feature-heading">New Feature Alert!</h3>
+          <p className="home-feature-text">We’ve teamed up with various Market Research Groups to bring paid research studies right to your phone.<br/><br/> Click the button below to see how you can get involved and get paid, all from the comfort of your home.</p>
+          <Link to="/research-studies"><button className="home-cta-button">Get Involved</button></Link>
+          <p className="home-ps">(And get paid!)</p>
         </div>
       </>
     )

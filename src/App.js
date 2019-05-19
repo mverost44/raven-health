@@ -6,6 +6,8 @@ import BottomNav from './Layout/BottomNav';
 
 import Home from './Layout/Home';
 import News from './Layout/NewsPage/News';
+import Research from './Layout/Research';
+import Charts from './Layout/ChartsPage/Charts';
 
 import './App.css';
 
@@ -46,6 +48,20 @@ class App extends Component {
           exact path="/news"
           render={() => (
             <News />
+          )}
+        />
+
+        <Route
+          exact path="/research-studies"
+          render={() => (
+            <Research />
+          )}
+        />
+
+        <Route
+          exact path="/charts"
+          render={() => (
+            <Charts />
           )}
         />
       </>

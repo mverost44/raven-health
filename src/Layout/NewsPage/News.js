@@ -24,7 +24,11 @@ componentDidMount() {
     const { newsFeed } = this.state
 
     if (!newsFeed) {
-      return 'spinner'
+      return (
+        <div className="news-container">
+          <h1 className="loading-screen">Loading...</h1>
+        </div>
+      )
     }
 
     return (

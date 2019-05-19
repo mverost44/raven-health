@@ -69,3 +69,11 @@
   padding-bottom: 10px;
   height: 200px;
 }
+
+.loading-screen {
+  height: 100vh;
+  font-family: omnes-cond-thin, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}

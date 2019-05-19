@@ -1,0 +1,51 @@
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: auto;
+  background-color: rgba(0, 111, 227, .15);
+  margin-top: 47px;
+  padding-bottom: 66px;
+  overflow-x: hidden;
+}
+
+.charts-picture {
+  width: 85%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.line-chart-title {
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  background-color: #B9D7F6;
+  width: 85%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 6px 0px;
+}
+
+.line-chart {
+  width: 85%;
+  height: auto;
+  background-color: #B9D7F6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.doughnut-chart {
+  width: 85%;
+  height: auto;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #B9D7F6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
