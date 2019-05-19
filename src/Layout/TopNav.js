@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 
 export default class TopNav extends Component {
+
+  openNav = () => {
+    document.getElementById("sidenav").style.width = "250px";
+  }
+
   render() {
     const styledTitle = (
       <>
@@ -15,7 +20,9 @@ export default class TopNav extends Component {
     return (
       <>
         <nav className="top-nav">
-          <i className="fa-inverse fas fa-bars fa-lg"></i>
+          <i className="fa-inverse fas fa-bars fa-lg"
+            onClick={() => this.openNav()}
+          ></i>
           {this.props.pageTitle ? pageTitle : styledTitle}
         </nav>
       </>

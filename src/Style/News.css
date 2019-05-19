@@ -17,6 +17,8 @@
   width: 88%;
   height: auto;
   background-color: #FAFAFF;
+  transition: max-height 1s ease-out;
+  max-height: 850px;
 }
 
 .post-author {
@@ -64,10 +66,16 @@
   margin-bottom: 10px;
 }
 
-.post-limiter {
+.post-menu > span {
+  transition: all 2s ease-in-out;
+}
+
+.post-container.post-limiter {
   overflow-y: hidden;
   padding-bottom: 10px;
   height: 200px;
+  max-height: 200px;
+  transition: max-height 1s;
 }
 
 .loading-screen {

@@ -9,6 +9,7 @@ import News from './Layout/NewsPage/News';
 import Research from './Layout/Research';
 import Charts from './Layout/ChartsPage/Charts';
 
+import avatar from './Images/avatar1.JPG'
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,11 @@ class App extends Component {
       pageTitle: null
     }
   }
+
+  closeNav = () => {
+    document.getElementById("sidenav").style.width = "0";
+  }
+
   render() {
     return (
       <>
@@ -64,7 +70,15 @@ class App extends Component {
             <Charts />
           )}
         />
+
+        <div id="sidenav" className="sidenav">
+          <div className="sidenav-header">
+            <img className="sidenav-avatar" src={avatar} alt="avatar"/>
+            <span className="closebtn" onClick={() => this.closeNav()}>&times;</span>
+          </div>
+        </div>
       </>
+
     );
   }
 }
