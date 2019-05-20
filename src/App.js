@@ -10,8 +10,8 @@ import News from './Layout/NewsPage/News';
 import Research from './Layout/Research';
 import Charts from './Layout/ChartsPage/Charts';
 import Messages from './Layout/Messages';
+import Posts from './Layout/Posts';
 import Notifications from './Layout/Notifications';
-import Settings from './Layout/Settings';
 
 import avatar from './Images/avatar1.JPG'
 import './App.css';
@@ -82,6 +82,13 @@ class App extends Component {
         />
 
         <Route
+          exact path="/posts"
+          render={() => (
+            <Posts />
+          )}
+        />
+
+        <Route
           exact path="/messages"
           render={() => (
             <Messages />
@@ -92,13 +99,6 @@ class App extends Component {
           exact path="/notifications"
           render={() => (
             <Notifications />
-          )}
-        />
-
-        <Route
-          exact path="/settings"
-          render={() => (
-            <Settings />
           )}
         />
 
@@ -129,13 +129,10 @@ class App extends Component {
                 {notification}
             </Link>
 
-            <Link
-              to="/settings"
-              className="sidenav-link"
-              onClick={() => this.closeNav()}>
-            <i className="fa-inverse fas fa-cog fa-lg"></i>
+            <span className="sidenav-link">
+              <i className="fa-inverse fas fa-cog fa-lg"></i>
               Settings
-            </Link>
+            </span>
           </div>
         </div>
       </>

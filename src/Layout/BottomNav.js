@@ -14,7 +14,9 @@ export default class BottomNav extends Component {
             <i className="fas fa-chart-area fa-lg"></i>
           </Link>
 
-          <i className="fas fa-plus fa-lg"></i>
+          <Link to="/posts">
+            <i className="fas fa-plus fa-lg"></i>
+          </Link>
 
           <Link to="/research-studies">
             <i className="fas fa-pen fa-lg"></i>

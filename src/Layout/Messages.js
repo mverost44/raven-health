@@ -1,30 +1,48 @@
 import React, { Component } from 'react'
+import axios from 'axios'
+import Message from './Message'
 
-import '../Style/Research.css'
+import '../Style/Messages.css'
 
-export default class Messages extends Component {
+export default class News extends Component {
   constructor() {
     super()
-    this.state = {
-      // hi
+      this.state = {
+        messages: null
+      }
     }
+
+componentDidMount() {
+  return axios({
+    method: 'GET',
+    url: 'https://lit-scrubland-16118.herokuapp.com/posts',
+  })
+     .then(res => this.setState({ messages: res.data.posts }))
+     .catch(res => console.log(res))
   }
 
   render() {
-    const study = (
-      <>
-        <div className="study-title">Study Title</div>
-        <div className="study-container">
-          <p className="study-body">Lorem ipsum dolor sit amet, an facer velit fierent eam. Aperiri labores percipitur eu eos, diceret feugait eloquentiam qui cu, sit diceret pericula eu. Vocent assueverit deterruisset ei vel, ad cum quem iudico. Vix iuvaret phaedrum an, erant intellegat temporibus an per.</p>
-          <button className="study-button">Take Survey</button>
+    const { messages } = this.state
+
+    if (!messages) {
+      return (
+        <div className="messages-container">
+          <h1 className="loading-screen">Loading...</h1>
         </div>
-      </>
-    )
+      )
+    }
 
     return (
       <>
-        <div className="research-container">
-          
+        <div className="messages-container">
+          {messages.map(message => (
+            <Message
+              key={message.id}
+              name={message.name}
+              feedback={message.feedback}
+            />
+           )
+          )}
         </div>
       </>
     )

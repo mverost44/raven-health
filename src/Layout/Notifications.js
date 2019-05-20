@@ -11,8 +11,8 @@ export default class Notifications extends Component {
         <div className="notification-container">
           <img className="notification-avatar" src={avatar2} alt="avatar"/>
           <div className="notification-text">
-            <h3 className="notification-title">Notification Title</h3>
-            <p className="notification-body">Lorem ipsum dolor sit amet, an facer velit fierent eam. Aperiri labores percipitur.</p>
+            <h3 className="notification-title">Hey There!</h3>
+            <p className="notification-body">Have anything you want to say? We love feedback! The + sign in the bottom menu will take you to our feedback page. Just write your comment and click post!</p>
           </div>
         </div>
       </>
@@ -22,8 +22,6 @@ export default class Notifications extends Component {
       <>
       <div className="notifications-banner">Recent</div>
         <div className="notifications-container">
-          {notification}
-          {notification}
           {notification}
         </div>
       </>

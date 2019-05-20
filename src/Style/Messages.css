@@ -1,0 +1,35 @@
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  background-color: #C5D5E5;
+  margin-top: 47px;
+  padding-top: 10px;
+  padding-bottom: 56px;
+  overflow-x: hidden;
+}
+
+.message-container {
+  padding: 5px 10px;
+  width: 88%;
+  height: auto;
+  background-color: #FAFAFF;
+  margin-top: 10px;
+}
+
+.message-title {
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.message-body {
+  font-family: omnes-cond, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
