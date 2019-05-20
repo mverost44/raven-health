@@ -5,13 +5,6 @@ import '../Style/Notifications.css'
 import avatar2 from '../Images/avatar2.JPG'
 
 export default class Notifications extends Component {
-  constructor() {
-    super()
-    this.state = {
-      // hi
-    }
-  }
-
   render() {
     const notification = (
       <>
