@@ -39,7 +39,6 @@ componentDidMount() {
               key={Math.random()}
               title={post.data.title}
               body={post.data.selftext}
-              author={post.data.author}
               image={post.data.preview ? post.data.preview.images[0].source.url : false }
             />
            )

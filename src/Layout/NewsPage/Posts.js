@@ -23,7 +23,7 @@ export default class Posts extends Component {
     return (
       <>
         <div className="post-author">
-          {this.props.author}
+          Anonymous User
         </div>
         <div className={limited ? `${"post-container post-limiter"}` : `${"post-container"}`}>
           <h1 className="post-title">
